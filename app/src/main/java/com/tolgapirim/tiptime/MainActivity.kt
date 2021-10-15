@@ -1,12 +1,7 @@
 package com.tolgapirim.tiptime
 
-import android.inputmethodservice.Keyboard
-import android.media.Image
+
 import android.os.Bundle
-import android.widget.Button
-import android.widget.RadioButton
-import android.widget.RadioGroup
-import android.widget.Switch
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -27,7 +22,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.tolgapirim.tiptime.ui.theme.TipTimeTheme
-import org.w3c.dom.Text
 import java.text.NumberFormat
 
 
@@ -69,7 +63,6 @@ fun MyApp() {
 
         // CostOfService EditText
         Row(
-            verticalAlignment = Alignment.CenterVertically,
             modifier = Modifier.padding(bottom = 30.dp)
         ) {
             Icon(
