@@ -4,6 +4,7 @@ package com.tolgapirim.tiptime
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.selection.selectable
@@ -235,7 +236,7 @@ fun RoundUpTip(selected: Boolean, onCheckedChange: (Boolean) -> Unit) {
     }
 }
 
-
+@VisibleForTesting
 fun calculateTipPercantage(
     costOfService: String,
     tipPercantage: Double,
