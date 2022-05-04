@@ -15,6 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.Role
@@ -111,7 +112,8 @@ fun MyApp() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(top = 20.dp, end = 5.dp)
-                    .alpha(0.5f),
+                    .alpha(0.5f)
+                    .testTag("resultTip"),
                 textAlign = TextAlign.End
             )
         }
@@ -230,6 +232,7 @@ fun RoundUpTip(selected: Boolean, onCheckedChange: (Boolean) -> Unit) {
             checked = selected,
             onCheckedChange = onCheckedChange,
             modifier = Modifier.padding(start = 170.dp)
+                .testTag("roundUp")
         )
 
 
